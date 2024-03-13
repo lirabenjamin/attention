@@ -1,0 +1,171 @@
+\documentclass[letterpaper, 12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[margin = 1 in]{geometry}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{tgpagella}
+\usepackage{bold-extra}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage[modulo]{lineno}
+\usepackage[colorlinks=true, citecolor=blue, linkcolor = blue]{hyperref}
+\usepackage{apacite}
+\usetikzlibrary{positioning}
+
+% TODO: What does AMITAI SHENHAV say about this.
+% \usepackage{helvet}
+
+
+\makeatletter         
+\renewcommand\maketitle{
+{\raggedright % Note the extra {
+\begin{center}
+{\huge \bfseries \sffamily \@title }\\[1ex] 
+{\large \bfseries \scshape \sffamily \@author}\\[1ex] 
+\bfseries \sffamily \@date\\[4ex]
+\end{center}}} % Note the extra }
+\makeatother
+
+\setlength{\parskip}{1em}
+
+
+\title{Attention and Expectancy-Value Theory}
+\author{Benjamin Lira}
+
+\begin{document}
+\maketitle
+% \onehalfspacing
+% \sffamily
+
+% For my \textbf{breadth exam,} I plan to write a Perspectives in Psychological Science style paper entitled \textit{``Salience Is the Missing Element in Expectancy-Value Theory"} proposing that incorporating attention into theories of expected value allow a more complete understanding of human valuation. Below is a brief sketch of the argument.
+% \hline
+\begin{abstract}
+Human decision making is widely assumed to be based on the costs, benefits, and probabilities we assign to outcomes. The expectancy-value perspective has deep roots in both psychology and economics. I suggest that this formulation misses a critical step that both precedes and shapes valuation: attention. This paper argues for the integration of attention into the expectancy-value model. First, I present a short history of expectancy-value theories. Next, I review contemporary research on attention, particularly on the selective nature of top-down attention processes as well as stimulus features that influence bottom-up salience. To lay bare the distinction between attention and valuation, I discuss attention in the context of the process model of behavior \cite{duckworth2020}. I then formally present my Attention-Expectancy-Value (AEV) framework. Finally, I conclude with theoretical and practical implications of this more complex model of human decision making.
+    
+\end{abstract}
+\linenumbers
+
+How do we decide what to eat on a given day, how to spend an hour of free time, or whether and how much to invest for retirement? An influential view in psychology, economics, and philosophy, is that we compare the costs and benefits associated with the choice, and weigh that net benefit by the probability that the desired outcome will come to fruition. A student might choose to spend an hour studying because (1) she values getting good grades in school more than the cost of the effort of studying, and (2) believes that studying for an hour is likely going to be instrumental in helping her achieve good grades. Changing any of these parameters may change her decision. If she cares about being popular more than she does about grades, or if the material to be studies required twice the effort, or if she believed that the teacher had a grudge against her and would fail her anyways; she would be far more likely to go to a party going on at the same time.
+
+Here, I argue that adding one more parameter to this equation, allows us to better account for behavior and choice. This parameter is attention. Attention is a gating mechanism that determines which options enter the choice set, and are subsequently evaluated \cite{berkman2017}
+    
+\section{Expectancy Value Theories}
+    
+Expectancy-Value has been influential and productive in many disciplines
+
+In economics, Expected Utility Theory (EUT) proposes that individuals choose between risky or uncertain prospects by comparing their expected utilities.
+        
+Expectancy value theory makes a very similar argument, from the lens of the psychology of motivation \cite{wigfield2000}
+        
+In organizational psychology Vroom's Expectancy Theory posits that the force of a behavior (i.e., the motivation for it) is a function of three terms (EIV).
+
+\section{The Process Model of Behavior}
+
+\subsection{Attention}
+A key aspect missing in all of these frameworks is the role of attention---defined as a cognitive process that selects stimuli for further processing.
+
+A vital feature of human attention is that it is \textit{selective}.
+
+Certain features of the environment can command attention from the bottom up---a process known as salience \cite{bordalo2022}.
+
+Contrast refers to how much a stimulus stands out from other stimuli in its surroundings
+
+Surprise involves the unexpectedness of a stimulus compared to past experiences in memory.
+
+Finally, prominence relates to the availability or centrality of a stimuilus in the perceptual field.
+
+Salience affects behavior because salient stimuli are overweighed while non-salient stimuli are underweighted
+
+
+Attention matters because it precedes and shapes valuation.
+
+Attention and valuation are separate cognitive processes that are often conflated
+
+\section{The Salience Expectancy Value Framework}
+
+Adding attention to the expected value calclualtion allows us to better account for human behavior
+
+\section{Implications}
+
+Theoretical Implications: Attention allows us to address some limitations of traditional expectancy value accounts.
+
+Methodological Implications: We need to measure attentnion and valuation separately.
+
+Practical Implications: There are several practical implications for people, technology designers, and leaders hoping to promote positive behaviors.
+
+\section{Future Directions}
+
+The model can be complicated by treating attention as not independent from the other parameters. One can differentially attend to the costs, the benefits, or the probabilities, aside from differentially attending to the options themselves.
+
+
+Is attention a continuous or binary variable? Does it influence valuation in an all-or-nothing way or is is continuous gradations?
+
+Does the time processes matter? Imagine time on the $x$-axis with each of the values for each of the parameters on the $y$-axis. How does time play a part: Can you accumulate low-level attntion over a period of time, or do you need to be over a threshold, regardless of time.
+
+
+\section{Conclusion}
+While the idea of expected utility has been widely influential in the social sciences, it has ignored the crucial role of attention in the valuation of behavioral alternatives
+    
+\newpage
+\textbf{Human decision making is widely assumed to be based on the costs, benefits, and probabilities we assign to outcomes.} As shown in equation \ref{eq1} the key idea behind the expectancy-value perspective is that people calculate utility by weighing the value of an outcome by the probability of it happening. For example, the the value of playing a lottery ticket that pays \$100 with 10\% probability is $.10 \times \$100 = \$10$. Therefore, I should buy that lottery ticket if it costs less than 10 dollars, and refrain from doing so if it is more expensive.
+
+\begin{equation} \label{eq1}
+\begin{split}
+    Utility &= Probability \times Value \\
+    Utility &= Probability \times (Gain - Cost) 
+\end{split}
+\end{equation}
+
+\section*{A survey of Expectancy Value Theories}
+
+\textbf{\textit{In economics, Expected Utility Theory (EUT) proposes that individuals choose between risky or uncertain prospects by comparing their expected utility values.}} EUT assumes decision-makers are rational, always selecting the option with the highest expected utility. However, in many real-world situations, explicit probabilities of outcomes are not always available. To address this, an extension of EUT known as Subjective Expected Utility Theory (SEUT) has been developed. SEUT allows individuals to assign subjective personal likelihoods to outcomes, reflecting their personal assessment of risk, which may or may not align with the actual, unknown probabilities. This adjustment acknowledges that people's perceptions of risk can significantly influence their decision-making process.
+% Moreover, this framework is compatible with risk aversion: people need a premium to outweigh uncertainty. Individuals are likely to prefer a sure \$10 rather than the equally valued 10\% probability \$100 lottery ticket.
+
+\textbf{\textit{Expectancy value theory makes a very similar argument, from the lens of the psychology of motivation}} \cite{wigfield2000}. The theory suggests that motivation to engage in a behavior is a function of two things: the expectancy (or probability) of achieving a result and the value of that result to the individual. Therefore, a student will be more motivated to study for a math exam if she believes that (1) she will obtain a good grade by studying, and (2) she thinks it is important or valuable to obtain a good grade in the test. 
+
+\textbf{\textit{In organizational psychology Vroom's Expectancy Theory posits that the force of a behavior (i.e., the motivation for it) is a function of three terms.}} \textit{Expectancy} is the probability that effort will lead to a certain performance level; \textit{instrumentality} refers to the probability that performance will lead to certain outcome; and finally, \textit{valence} is the internal value attributed to that outcome \footnote{cfr. expectancy and instrumentality with Bandura's concepts of self-efficacy and outcome expectancy}. For example, a worker will be more motivated if he believes that putting forth effort in his work will allow him to reach a certain sales target (expectancy), that hitting that sales target makes it likely that he is promoted (instrumentality), and that he thinks that obtaining that promotion will be a good thing, either because of increased pay, prestige, or feelings of pride.
+
+\begin{equation} \label{vroom}
+    Force = Expectancy \times Instrumentality \times Valence
+\end{equation}
+
+\section*{Attention}
+
+\textbf{A key aspect missing in all of these frameworks is the role of attention.} The human cognitive system is limited in its capacity to process information. Thus, attention is the cognitive process of selectively concentrating on one aspect of the environment while ignoring other things. Likewise, attention can also be directed inward, towards certain goals, memories, or internal representations.
+
+\textbf{A vital feature of attention is that it is selective}
+
+\textbf{Certain features of the environment can command attention from the bottom up—a process known as salience \cite{bordalo2022}.}
+
+\section*{Attention and Valuation}
+
+\textbf{How does attention relate to valuation?} The focusing illusion states that ``Nothing in life is as important as you think it is when you are thinking about it'' \cite[p. 402]{kahneman2011}. Thus, anything that does not pass the cognitive filter of attention is not processed further, and thus devalued. 
+
+% Things that we might not value as much, might be overvalued relative to others, if they are constantly entering our attention. (Cite focusing illusion)
+
+\textbf{I posit that adding attention to the expected value calculation allows us to better account for human behavior.} Equation \ref{aeut} shows the extension of EUT, adding attention. Because attention is multiplied, it suggests that things that are not attended to, receive no value, regardless of their probability or their value. Moreover, attention has veto power insofar as what is not attended to is never considered at all in terms of benefits, costs, or likelihood.
+
+\begin{equation} \label{aeut}
+    Utility = Attention \times Probability \times Value
+\end{equation}
+
+% \textbf{Adding attention allows us to better understand why self-control is particularly difficult in the 21st century.} Our current economic system monetizes attention, such that companies are rewarded for holding their users attention. Therefore, incentives for social media companies are to 
+
+\textbf{Attention and valuation are separate cognitive processes that are often conflated.} Take for example Alice and Bob, two people trying to diet, who both love Doritos. While they both have Doritos at home, Bob keeps them by the sofa where he spends a lot of time while Alice keeps them in a high cupboard which she cant reach, behind some other bulky items. An outside observer might see Bob trying to resist the Doritos but munching on them compulsively, while Alice remains untempted. This observer might come to the faulty conclusion that Bob values Doritos more than Alice. The truth however may be that because Alice cannot see them, they are out of sight, and out of mind. The process model of self-control effectively separates attention from appraisal, thus allowing this divergence to be explained in terms of attention rather than valuation. (cite process model).
+
+\textbf{Why attention has been neglected?} It seems like not just researchers, but people in general overlook the power of attention in shaping their behavior.  Attentional strategies for self-control are the least frequently self-reported (White et al., Stitch In Time; Kristal et al., in prep). This seems natural, if you are oblivious to what you are not paying attention to, it is unlikely that you could recognize its importance.
+
+\textbf{Adding attention allows us to address some limitations of traditional expectancy value accounts.} For example, neoclassical economics has trouble explaining preference reversals: if value and probability are constant, people should not change their mind, and yet they do. This is easily explainable by recognizing that where we direct our attention might change the subjective utility of an action.
+
+\textbf{There are several practical implications for people, technology designers, and leaders hoping to promote positive behaviors.} Manipulating attention in a way that increases the likelihood that positive behaviors are attended to, and reduced the probability that negative (but immediately rewarding behaviors) are attended to.
+
+\textbf{While the idea of expected utility has been widely influential in the social sciences, it has, for the most part ignored the crucial role of attention in the valuation of behavioral alternatives}. Adding attention to EUT frameworks allows us to overcome some limitations of these accounts, to better understand human behavior, and to better design environments that promote flourishing. It is by definition easy to overlook that to which we don't pay attention to, including the role of attention itself. However, overlooking attention is a mistake that limits our understanding of human behavior.
+
+\section{The attention economy explains why we seem more disregulated than before}
+
+\footnotesize
+\bibliographystyle{apacite}
+\bibliography{aeut}
+
+
+\end{document}
